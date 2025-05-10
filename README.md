@@ -1,6 +1,6 @@
 # Chat with PDFs 📑 - A Demo of Retrieval-Augmented Generation (RAG)
 
-This is a demonstration of a Retrieval-Augmented Generation (RAG) application that allows users to interact with uploaded PDFs through a chat interface. By leveraging the principles of RAG, this app uses FAISS for efficient similarity search and a transformer-based model from Ollama to generate contextually relevant responses based on the content of the uploaded PDFs.
+This is a demonstration of a Retrieval-Augmented Generation (RAG) application that allows users to interact with uploaded PDFs through a chat interface. By leveraging the principles of RAG, this app uses FAISS for efficient similarity search and a transformer-based model from Ollama to generate contextually relevant responses based on the content of the uploaded PDFs
 
 ## Features
 - **Chat with PDFs:** Upload your PDFs and ask questions about their content. The app retrieves the most relevant sections and provides answers based on the document.
