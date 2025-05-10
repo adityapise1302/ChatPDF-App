@@ -16,14 +16,13 @@ from langchain_ollama.chat_models import ChatOllama
 torch.classes.__path__ = [os.path.join(torch.__path__[0], torch.classes.__file__)]
 
 # Define constants
-OLLAMA_URL = "http://localhost:11434/api/chat"
 MODEL = "phi4"
 
 # Initialize RAG chain in session state if not already initialized
 if "rag_chain" not in st.session_state:
     # Load the chat model from Ollama
     st.session_state.llm = ChatOllama(
-                            model= "phi4",
+                            model= MODEL,
                             temperature= 0.1,
                             num_ctx=16384
                         )
@@ -163,4 +162,3 @@ with st.sidebar:
     )
     # Button to trigger PDF processing
     st.button(label="Process", on_click=process_pdf, args=(uploaded_files,))
-    
